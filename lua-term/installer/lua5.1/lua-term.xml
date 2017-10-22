@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jonchki-artifact version="1.0">
+	<info group="com.github.hoelzro"
+	      module="lua-term"
+	      artifact="lua5.1-lua-term"
+	      version="@PROJECT_VERSION@"
+	      vcs-id="@PROJECT_VERSION_VCS@"
+	      extension="tar.xz">
+		<license name="MIT"/>
+		<author name="Rob Hoelz" url="https://github.com/hoelzro/lua-term" />
+		<description>
+			Terminal operations for Lua
+		</description>
+	</info>
+	<dependencies>
+		<build-dependency group="org.lua" module="lua" artifact="lua" version="5.1"/>
+		<dependency group="org.lua" module="lua" artifact="lua"/>
+	</dependencies>
+</jonchki-artifact>
