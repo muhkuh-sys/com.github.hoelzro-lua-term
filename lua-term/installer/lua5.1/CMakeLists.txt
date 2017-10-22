@@ -31,7 +31,7 @@ INCLUDE(CPack)
 #
 INSTALL(FILES ${INSTALL_WIN32}/lib/core.dll
         DESTINATION windows_x86/lua_plugins/term)
-INSTALL(FILES ${INSTALL_WIN32}/lua/colors.lua ${INSTALL_WIN32}/lua/term/cursor.lua ${INSTALL_WIN32}/lua/init.lua
+INSTALL(FILES ${INSTALL_WIN32}/lua/colors.lua ${INSTALL_WIN32}/lua/cursor.lua ${INSTALL_WIN32}/lua/init.lua
         DESTINATION windows_x86/lua/term)
 
 INSTALL(FILES ${INSTALL_UBUNTU_1404_X86}/lib/core.so
