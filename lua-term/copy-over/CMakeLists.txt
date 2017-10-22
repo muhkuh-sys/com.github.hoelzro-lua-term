@@ -28,6 +28,8 @@ INSTALL(TARGETS TARGET_core
         RUNTIME DESTINATION bin
         INCLUDES DESTINATION include)
 
+INSTALL(FILES term/colors.lua term/cursor.lua term/init.lua
+        DESTINATION lua)
 
 # Add tests for this module.
 IF((${CMAKE_SYSTEM_NAME} STREQUAL "Windows") AND (${CMAKE_COMPILER_IS_GNUCC}))
