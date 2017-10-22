@@ -6,7 +6,7 @@ echo "CMAKE_COMPILER = ${CMAKE_COMPILER}"
 echo "JONCHKI_SYSTEM = ${JONCHKI_SYSTEM}"
 
 # Create all folders.
-#rm -rf ${BUILD_DIR}
+rm -rf ${BUILD_DIR}
 mkdir -p ${BUILD_DIR}
 mkdir -p ${BUILD_DIR}/lua5.1
 mkdir -p ${BUILD_DIR}/lua5.1/build_requirements
