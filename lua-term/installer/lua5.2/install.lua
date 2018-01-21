@@ -62,7 +62,6 @@ elseif strDistId=='ubuntu' then
       t:install('ubuntu_1704_x86_64/lua_plugins/term/core.so', '${install_lua_cpath}/term/')
       tResult = true
     end
-  end
 
   elseif strDistVersion=='17.10' then
     if strCpuArch=='x86' then
