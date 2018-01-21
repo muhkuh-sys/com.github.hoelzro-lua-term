@@ -16,7 +16,7 @@ mkdir -p ${PRJDIR}/build
 lxc init mbs-ubuntu-1604-x64 ${CONTAINER}
 lxc config device add ${CONTAINER} projectDir disk source=${PRJDIR} path=/tmp/work
 lxc start ${CONTAINER}
-sleep 5
+sleep 10
 
 # Prepare the build folder.
 lxc exec ${CONTAINER} -- bash -c 'rm -rf /tmp/build'
