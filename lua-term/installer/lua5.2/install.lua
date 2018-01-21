@@ -39,6 +39,16 @@ elseif strDistId=='ubuntu' then
       tResult = true
     end
   end
+
+  elseif strDistVersion=='17.10' then
+    if strCpuArch=='x86' then
+      t:install('ubuntu_1710_x86/lua_plugins/term/core.so',    '${install_lua_cpath}/')
+      tResult = true
+    elseif strCpuArch=='x86_64' then
+      t:install('ubuntu_1710_x86_64/lua_plugins/term/core.so', '${install_lua_cpath}/')
+      tResult = true
+    end
+  end
 end
 
 return tResult

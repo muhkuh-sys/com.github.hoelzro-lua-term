@@ -10,10 +10,10 @@ SET(INSTALL_UBUNTU_1404_X86    "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.
 SET(INSTALL_UBUNTU_1404_X86_64 "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1404_x86_64")
 SET(INSTALL_UBUNTU_1604_X86    "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1604_x86")
 SET(INSTALL_UBUNTU_1604_X86_64 "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1604_x86_64")
-SET(INSTALL_UBUNTU_1610_X86    "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1610_x86")
-SET(INSTALL_UBUNTU_1610_X86_64 "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1610_x86_64")
 SET(INSTALL_UBUNTU_1704_X86    "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1704_x86")
 SET(INSTALL_UBUNTU_1704_X86_64 "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1704_x86_64")
+SET(INSTALL_UBUNTU_1710_X86    "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1710_x86")
+SET(INSTALL_UBUNTU_1710_X86_64 "${CMAKE_CURRENT_SOURCE_DIR}/../../../build/lua5.3/ubuntu_1710_x86_64")
 
 # Get the project version. Both the WIN32 and the WIN64 folder have the same version file.
 INCLUDE(${INSTALL_WIN32}/com.github.hoelzro-lua-term.version)
@@ -51,6 +51,11 @@ INSTALL(FILES ${INSTALL_UBUNTU_1704_X86}/lib/core.so
 INSTALL(FILES ${INSTALL_UBUNTU_1704_X86}/lua/colors.lua ${INSTALL_UBUNTU_1704_X86}/lua/cursor.lua ${INSTALL_UBUNTU_1704_X86}/lua/init.lua
         DESTINATION ubuntu_1704_x86/lua/term)
 
+INSTALL(FILES ${INSTALL_UBUNTU_1710_X86}/lib/core.so
+        DESTINATION ubuntu_1710_x86/lua_plugins/term)
+INSTALL(FILES ${INSTALL_UBUNTU_1710_X86}/lua/colors.lua ${INSTALL_UBUNTU_1710_X86}/lua/cursor.lua ${INSTALL_UBUNTU_1710_X86}/lua/init.lua
+        DESTINATION ubuntu_1710_x86/lua/term)
+
 
 #-----------------------------------------------------------------------------
 #
@@ -75,6 +80,11 @@ INSTALL(FILES ${INSTALL_UBUNTU_1704_X86_64}/lib/core.so
         DESTINATION ubuntu_1704_x86_64/lua_plugins/term)
 INSTALL(FILES ${INSTALL_UBUNTU_1704_X86_64}/lua/colors.lua ${INSTALL_UBUNTU_1704_X86_64}/lua/cursor.lua ${INSTALL_UBUNTU_1704_X86_64}/lua/init.lua
         DESTINATION ubuntu_1704_x86_64/lua/term)
+
+INSTALL(FILES ${INSTALL_UBUNTU_1710_X86_64}/lib/core.so
+        DESTINATION ubuntu_1710_x86_64/lua_plugins/term)
+INSTALL(FILES ${INSTALL_UBUNTU_1710_X86_64}/lua/colors.lua ${INSTALL_UBUNTU_1710_X86_64}/lua/cursor.lua ${INSTALL_UBUNTU_1710_X86_64}/lua/init.lua
+        DESTINATION ubuntu_1710_x86_64/lua/term)
 
 
 #-----------------------------------------------------------------------------
